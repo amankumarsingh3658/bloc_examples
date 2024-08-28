@@ -1,4 +1,5 @@
 import 'package:bloc_examples/Repository/favourite_repository.dart';
+import 'package:bloc_examples/UI/counterScreen.dart';
 import 'package:bloc_examples/UI/favourites_app_screen.dart';
 import 'package:bloc_examples/UI/todo_screen.dart';
 import 'package:bloc_examples/Utils/image_picker_utils.dart';
@@ -20,9 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-          BlocProvider(
-            create: (_) => CounterBloc(),
-          ),
+          
           BlocProvider(
             create: (_) => SwitchBloc(),
           ),
@@ -32,8 +31,8 @@ class MyApp extends StatelessWidget {
         ],
         child: MaterialApp(
             themeMode: ThemeMode.dark,
-            theme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
+            //theme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
             title: 'Flutter Demo',
-            home: FavouriteAppScreen()));
+            home: CounterScreen()));
   }
 }

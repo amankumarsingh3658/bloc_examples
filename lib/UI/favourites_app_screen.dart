@@ -1,4 +1,6 @@
 import 'package:bloc_examples/Model/favourite_items_model.dart';
+import 'package:bloc_examples/bloc/counter_bloc/counter_bloc.dart';
+import 'package:bloc_examples/bloc/counter_bloc/counter_state.dart';
 import 'package:bloc_examples/bloc/favourite_app_bloc/favourite_app_bloc.dart';
 import 'package:bloc_examples/bloc/favourite_app_bloc/favourite_app_events.dart';
 import 'package:bloc_examples/bloc/favourite_app_bloc/favourite_app_state.dart';
